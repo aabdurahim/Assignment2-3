@@ -1,0 +1,34 @@
+Test Case 1 — Google title contains "Google"
+Description:
+  - Open https://www.google.com
+  - Verify the page title contains the word "Google"
+  - Expected result: page title contains "Google"
+
+Steps:
+  1. Navigate to https://www.google.com
+  2. Wait for the page to load
+  3. Assert "Google" in browser.title
+
+Notes:
+  - This test verifies basic page loading and title correctness.
+  - Runs on Chrome / Firefox / Safari.
+
+Test Case 2 — Example.com H1 content
+Description:
+  - Open https://example.com
+  - Verify that the H1 element contains "Example Domain"
+  - Expected result: H1 text equals "Example Domain"
+
+Steps:
+  1. Navigate to https://example.com
+  2. Find element tag 'h1'
+  3. Assert element.text == "Example Domain"
+
+Notes:
+  - Simple DOM content verification.
+  - Runs on Chrome / Firefox / Safari.
+
+General info:
+  - Tests are implemented in pytest using selenium and BrowserStack remote WebDriver.
+  - BrowserStack credentials are provided via Jenkins credentials binding: BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY
+  - Test results are produced in JUnit XML (results.xml) for Jenkins publishing.
