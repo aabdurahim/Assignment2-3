@@ -1,0 +1,36 @@
+Run results (BS-Py-Tests)
+
+Date: <YYYY-MM-DD HH:MM>
+Jenkins job: BS-Py-Tests
+Commit: <git commit hash or message>
+
+Summary:
+  - Total tests: 6
+  - Passed: 6
+  - Failed: 0
+  - Warnings: 6
+
+Browsers tested:
+  - Chrome (Windows 11)
+  - Firefox (Windows 11)
+  - Safari (macOS Ventura)
+
+BrowserStack Build Run:
+  - Build name / ID: <paste build id here>
+  - Sessions:
+      - Chrome session URL: <paste session url>
+      - Firefox session URL: <paste session url>
+      - Safari session URL: <paste session url>
+
+Artifacts:
+  - JUnit xml (Jenkins): results.xml
+  - BrowserStack screenshot(s): see attached images
+  - BrowserStack video/logs: download from session → Downloads
+
+Screenshot (example):
+  - Local path (provided): sandbox:/mnt/data/fd5d45f8-1e48-4a1e-aad9-3963df87885b.png
+
+Notes:
+  - pytest command used: python -m pytest -q tests/ --junitxml=results.xml
+  - Jenkins job injects BrowserStack credentials via binding:
+      BROWSERSTACK_USERNAME, BROWSERSTACK_ACCESS_KEY
