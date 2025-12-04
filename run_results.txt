@@ -1,0 +1,26 @@
+Run ID: 1
+Date: 2025-11-25
+
+Test execution summary:
+
+Total tests: 6
+Passed: 6
+Failed: 0
+Errors: 0
+Skipped: 0
+
+Execution Time:
+- 99 seconds (approximately)
+
+Environment:
+- Jenkins Freestyle Job: BS-Py-Tests
+- OS: Windows (Jenkins Windows agent)
+- Python: 3.13.7
+- Pip: 25.3
+- Selenium & Pytest installed from requirements.txt
+- BrowserStack remote execution enabled (credentials via Jenkins credentials store)
+
+Notes:
+- All 6 tests executed successfully across Chrome, Firefox and Safari configs.
+- Jenkins correctly captured results.xml as JUnit report.
+- No flaky tests or unstable behavior observed.
